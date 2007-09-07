@@ -7,7 +7,7 @@
 Summary:   %language HOWTO documents (html format) from the Linux Documentation Project
 Name:      howto-%{format1}
 Version:	10
-Release:	%mkrel 3
+Release:	%mkrel 4
 Group:		Books/Howtos
 
 Source0:   %name.tar
@@ -37,8 +37,8 @@ untar_howtos; makehowtoindex %lang %language > index.html; cp -a * $RPM_BUILD_RO
 install -m 755 -d $RPM_BUILD_ROOT%{_datadir}/applications
 cat > %{buildroot}%_datadir/applications/mandriva-%{name}.desktop << EOF
 [Desktop Entry]
-Name=XSane
-Comment=XSane
+Name=Howtos German
+Comment=HOWTO documents (html format) from the Linux Documentation Project in German
 Exec=xdg-open %_datadir/doc/HOWTO/HTML/%lang/index.html
 Icon=documentation_section
 Terminal=false
