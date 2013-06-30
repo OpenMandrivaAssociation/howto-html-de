@@ -16,7 +16,7 @@ BuildArch:	noarch
 
 BuildRequires:	howto-utils
 Requires:	locales-%{lang}
-Rrequires:	xdg-utils
+Requires:	xdg-utils
 
 %description
 Linux HOWTOs are detailed documents which describe a specific aspect of 
